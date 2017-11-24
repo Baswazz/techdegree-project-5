@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+.headline--primary {
+  color: #58e1c1;
+  font-size: 2em;
+  font-weight: 700; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -391,5 +397,10 @@ template {
 
 * {
   box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5; }
 
 /*# sourceMappingURL=styles.css.map */

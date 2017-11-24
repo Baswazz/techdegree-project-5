@@ -2,11 +2,39 @@
 // Global Config
 // ==========================================================================
 
-// Fonts
+// Font Stacks
 
-// Colors
+$font-url--google      : 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700';
+$font-family--primary  : 'Open Sans', sans-serif;
+
+$font-weight--regular     : 400;
+$font-weight--semi-bold   : 600;
+$font-weight--bold        : 700;
+
+// Text
+
+$base__font-size    : 16px;
+$base__line-height  : 24px;
+
+// Descriptive Base Colors
+
+$white	: #fff;
+$black	: #000;
+$grey   : #ccc;
+
+$viking						: #58e1c1;
+$malibu						: #51ddfc;
+$emerald					: #63cc82;
+$sunglo						: #e4757a;
+$coral						: #fd7856;
+$purple-mountains-majesty	: #927bc1;
+
+// Color Usage
+
+$color-primary		: $viking;
+$color-secondary	: $malibu;
 
 // Breakpoints
 
 $breakpoint-mobile	: 480px;
-$breakpoint-desktop	: 1400px; 
+$breakpoint-desktop	: 1400px;
