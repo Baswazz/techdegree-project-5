@@ -6,10 +6,34 @@ body {
   font-size: $base__font-size;
   font-family: $font-family--primary;
   line-height: ($base__line-height/$base__font-size);
+  color: palette(grey);
 }
+
+a,
+.link {
+  color: $color-secondary;
+  font-weight: $font-weight--semi-bold;
+  text-decoration: none;
+  &:hover {}
+}
+
+// Headings
 
 .headline {
   @include m(primary) {
     @extend %headline-primary;
   }
+  @include m(secondary) {
+    @extend %headline-secondary;
+  }
+}
+
+// Blockquote
+.blockquote {
+  font-size: em(24px);
+  font-style: italic;
+  border-left: 9px solid $color-primary;
+  border-radius: $br--default;
+  padding-left: em(16px);
+  line-height: (32px/26px);
 }

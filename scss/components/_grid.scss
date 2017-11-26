@@ -1,3 +1,34 @@
 // ==========================================================================
 // Grid
 // ==========================================================================
+
+.container {
+  padding-right: em(32px);
+  padding-left: em(32px);
+}
+
+.grid {
+  @include e(row) {
+    @include flexbox(column);
+    @include mediaq(medium) {
+      @include flexbox(row);
+    }
+  }
+
+  @include e(col) {
+    @for $i from 1 through $grid-columns {
+      @include m($i) {
+        flex-basis: (100 / ($grid-columns / $i )) * 1%;
+      }
+    }
+  }
+}
+
+// .theme__colors {
+//   background-color: tomato;
+//   margin-bottom: em(16px);
+// }
+
+.centered {
+  align-self: center;
+}

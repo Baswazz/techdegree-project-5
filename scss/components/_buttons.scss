@@ -1,3 +1,26 @@
 // ==========================================================================
 // Buttons
 // ==========================================================================
+
+.btn {
+  @include bg-colors($ui-colors);
+}
+
+[class^="btn--"] {
+  text-align: center;
+  padding: em(14px) em(32px);
+  border: 0;
+  color: $white;
+  border-radius: $br--default;
+  text-transform: uppercase;
+  font-size: em(16px);
+  font-weight: $font-weight--bold;
+  display: block;
+  transition: opacity $transition-duration;
+  width: 100%;
+  margin-bottom: em(24px);
+  cursor: pointer;
+  &:hover {
+    opacity: .75;
+  }
+}

@@ -1,3 +1,16 @@
 // ==========================================================================
 // Img
 // ==========================================================================
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: em(24px);
+}
+
+.img {
+  @include m(frame) {
+    border: 1px solid palette(grey, x-light);
+    padding: em(14px);
+  }
+}

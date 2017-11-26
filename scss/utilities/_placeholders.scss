@@ -10,6 +10,24 @@
   color: $color-primary;
   font-size: em(32px);
   font-weight: $font-weight--bold;
+  line-height: (18px / $base__font-size);
+  margin-left: em(8px);
+}
+
+%headline-secondary {
+  font-size: em(16px);
+  font-weight: $font-weight--light;
+  color: palette(grey, light);
+  margin: em(32px) 0 em(16px);
 }
 
 // Nav items
+
+// buttons
+
+%btn {
+  padding: 15px 30px;
+  border-radius: $br--default;
+  display: block;
+
+}

@@ -1,3 +1,18 @@
 // ==========================================================================
 // Nav
 // ==========================================================================
+
+.nav {
+  a {
+    display: block;
+    text-align: center;
+    padding: em(16px);
+    border-radius: $br--default;
+    color: palette(grey);
+    transition: background-color $transition-duration;
+    &:hover {
+      background-color: $color-primary;
+      color: $white;
+    }
+  }
+}

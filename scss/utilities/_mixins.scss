@@ -17,4 +17,43 @@
 
 // Media Queries
 
+@mixin mediaq($break) {
+  @if $break == "medium" {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+  @else {
+    @error "No value could be retrieved for `#{$break}`.";
+  }
+}
+
 // Flexbox settings
+
+@mixin flexbox($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+// Generate modifier color classes
+
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+// Grid Columns
+
+// @mixin grid() {
+//   &--col {
+//
+//   }
+// }
