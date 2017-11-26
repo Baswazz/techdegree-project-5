@@ -15,4 +15,7 @@
       color: $white;
     }
   }
+  @include mediaq(medium) {
+    @include flexbox;
+  }
 }

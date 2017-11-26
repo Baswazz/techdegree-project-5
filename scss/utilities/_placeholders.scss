@@ -15,10 +15,10 @@
 }
 
 %headline-secondary {
-  font-size: em(16px);
+  font-size: em(18px);
   font-weight: $font-weight--light;
   color: palette(grey, light);
-  margin: em(32px) 0 em(16px);
+  margin: em(32px) 0 em(32px);
 }
 
 // Nav items
@@ -30,4 +30,12 @@
   border-radius: $br--default;
   display: block;
 
+}
+
+%grid-theme-styles {
+  background-color: palette(grey, x-light);
+  border-radius: $br--default;
+  text-align: center;
+  font-weight: $font-weight--semi-bold;
+  padding: em(10px) em(48px);
 }

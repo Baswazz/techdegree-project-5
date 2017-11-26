@@ -5,11 +5,17 @@
 .container {
   padding-right: em(32px);
   padding-left: em(32px);
+  @include mediaq(medium) {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .grid {
   @include e(row) {
     @include flexbox(column);
+    margin-bottom: em(48px);
+
     @include mediaq(medium) {
       @include flexbox(row);
     }
@@ -19,15 +25,21 @@
     @for $i from 1 through $grid-columns {
       @include m($i) {
         flex-basis: (100 / ($grid-columns / $i )) * 1%;
+        &:theme
       }
     }
   }
 }
 
-// .theme__colors {
-//   background-color: tomato;
-//   margin-bottom: em(16px);
-// }
+[class^="grid--"] {
+  padding: em(10px) em(48px);
+}
+
+.theme {
+  @include e(colors) {
+    @extend %grid-theme-styles;
+  }
+}
 
 .centered {
   align-self: center;

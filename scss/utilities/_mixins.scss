@@ -19,12 +19,12 @@
 
 @mixin mediaq($break) {
   @if $break == "medium" {
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-medium) {
       @content;
     }
   }
   @else if $break == "large" {
-    @media (min-width: $breakpoint-lg) {
+    @media (min-width: $breakpoint-large) {
       @content;
     }
   }
