@@ -25,21 +25,23 @@
     @for $i from 1 through $grid-columns {
       @include m($i) {
         flex-basis: (100 / ($grid-columns / $i )) * 1%;
-        &:theme
+        &.theme__colors {
+          background-color: palette(grid, $i);
+        }
       }
     }
   }
 }
 
-[class^="grid--"] {
+[class^="grid__col"] {
   padding: em(10px) em(48px);
 }
 
-.theme {
-  @include e(colors) {
-    @extend %grid-theme-styles;
-  }
-}
+// .theme {
+//   @include e(colors) {
+//     @extend %grid-theme-styles;
+//   }
+// }
 
 .centered {
   align-self: center;

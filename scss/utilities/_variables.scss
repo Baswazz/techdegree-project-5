@@ -43,6 +43,15 @@ $color-palettes: (
     light   : lighten($grey, 10%),
     base    : $grey,
     dark    : darken($grey, 4%)
+  ),
+  grid: (
+    3  : opacify($malibu, .25),
+    4  : opacify($viking, .25),
+    5  : opacify($malibu, .25),
+    6  : opacify($purple-mountains-majesty, .25),
+    7  : opacify($emerald, .25),
+    8  : opacify($sunglo, .25),
+    12 : opacify($coral, .25)
   )
 );
 
@@ -55,18 +64,6 @@ $ui-colors: (
   warning  : $coral,
   info     : $purple-mountains-majesty
 );
-
-// Grid Colors
-
-// $grid-colors: (
-//   3  :
-//   4  :
-//   5  :
-//   6  :
-//   7  :
-//   8  :
-//   12 :
-// );
 
 // Breakpoints
 
