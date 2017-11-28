@@ -45,13 +45,13 @@ $color-palettes: (
     dark    : darken($grey, 4%)
   ),
   grid: (
-    3  : opacify($malibu, .25),
-    4  : opacify($viking, .25),
-    5  : opacify($malibu, .25),
-    6  : opacify($purple-mountains-majesty, .25),
-    7  : opacify($emerald, .25),
-    8  : opacify($sunglo, .25),
-    12 : opacify($coral, .25)
+    3  : rgba($malibu, .8),
+    4  : rgba($viking, .8),
+    5  : rgba($malibu, .8),
+    6  : rgba($purple-mountains-majesty, .8),
+    7  : rgba($emerald, .8),
+    8  : rgba($sunglo, .8),
+    12 : rgba($coral, .8)
   )
 );
 
