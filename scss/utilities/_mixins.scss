@@ -23,13 +23,16 @@
       @content;
     }
   }
-  @else if $break == "large" {
-    @media (min-width: $breakpoint-large) {
-      @content;
-    }
-  }
   @else {
     @error "No value could be retrieved for `#{$break}`.";
+  }
+}
+
+// Adjacent sibling margins
+@mixin doubly($margin: 1em) {
+  & + & {
+   margin-left: $margin;
+   @content;
   }
 }
 
@@ -52,8 +55,17 @@
 
 // Grid Columns
 
-// @mixin grid() {
-//   &--col {
-//
-//   }
-// }
+@mixin grid {
+  @for $i from 1 through $g-col-count {
+    &--#{$i} {
+      flex-basis: percentage($i / $g-col-count);
+      @content;
+      &.theme__colors {
+        background-color: palette(grid-colors, $i);
+        border-radius: $br--default;
+        font-weight: $font-weight--regular;
+        text-align: center;
+      }
+    }
+  }
+}

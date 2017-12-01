@@ -8,8 +8,9 @@
     text-align: center;
     padding: em(16px);
     border-radius: $br--default;
-    color: palette(grey);
+    color: palette(grey, dark);
     transition: background-color $transition-duration;
+    font-weight: $font-weight--light;
     &:hover {
       background-color: $color-primary;
       color: $white;

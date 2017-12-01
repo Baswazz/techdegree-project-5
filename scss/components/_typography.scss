@@ -5,6 +5,7 @@
 body {
   font-size: $base__font-size;
   font-family: $font-family--primary;
+  font-weight: $font-weight--light;
   line-height: ($base__line-height/$base__font-size);
   color: palette(grey);
 }
@@ -12,7 +13,7 @@ body {
 a,
 .link {
   color: $color-secondary;
-  font-weight: $font-weight--semi-bold;
+  font-weight: $font-weight--bold;
   text-decoration: none;
   &:hover {}
 }
