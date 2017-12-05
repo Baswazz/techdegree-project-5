@@ -6,11 +6,12 @@
   a {
     display: block;
     text-align: center;
-    padding: em(16px);
+    padding: em(13px);
     border-radius: $br--default;
     color: palette(grey, dark);
     transition: background-color $transition-duration;
     font-weight: $font-weight--light;
+    text-decoration: none;
     &:hover {
       background-color: $color-primary;
       color: $white;

@@ -4,9 +4,10 @@
 
 // Font Stacks
 
-$font-url--google      : 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+$font-url--google      : 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700';
 $font-family--primary  : 'Lato', sans-serif;
 
+$font-weight--thin        : 100;
 $font-weight--light       : 300;
 $font-weight--regular     : 400;
 $font-weight--bold        : 700;
@@ -88,4 +89,10 @@ $br--default    : 5px;
 $transition-duration  : .3s;
 
 // Grid
-$g-col-count: 12;
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;
+
+// Gutters
+$gutter--default  : 18px;

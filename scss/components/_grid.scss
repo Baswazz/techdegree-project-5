@@ -3,49 +3,36 @@
 // ==========================================================================
 
 .container {
-  padding-right: em(18px);
-  padding-left: em(18px);
+  @extend .centered;
+  width: 90%;
+
+  // Set a max-width for grid container
   @include mediaq(medium) {
-    width: 90%;
-    margin: 0 auto;
+    max-width: $g-cont-max-w;
   }
 }
 
 .grid {
   @include e(row) {
+    margin-bottom: $gutter--default;
     @include flexbox(column);
-    margin-bottom: em(48px);
-
     @include mediaq(medium) {
-      @include flexbox(row);
-      // Met (doubly) + alle columns targetten behalve de eerste
+      @include flexbox(row, space-between);
     }
   }
 
-  .centered {
-    align-self: center;
-  }
-
-  // @include e(col) {
-  //   @for $i from 1 through $grid-columns {
-  //     @include m($i) {
-  //       flex-basis: (100 / ($grid-columns / $i )) * 1%;
-  //       &.theme__colors {
-  //         background-color: palette(grid, $i);
-  //       }
-  //     }
-  //   }
-  // }
-
   @include e(col) {
-    @include grid;
+    @include g-colors;
+    @include mediaq(medium) {
+      @include g-columns;
+    }
   }
 }
 
 [class^="grid__col"] {
-  padding: em(10px) em(48px);
-}
-
-.centered {
-  align-self: center;
+  padding: em($gutter--default / 2);
+  &.theme__colors {
+    text-align: center;
+    border-radius: $br--default;
+  }
 }

@@ -10,12 +10,13 @@ body {
   color: palette(grey);
 }
 
-a,
 .link {
   color: $color-secondary;
-  font-weight: $font-weight--bold;
+  font-weight: $font-weight--regular;
   text-decoration: none;
-  &:hover {}
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 // Headings
@@ -31,7 +32,7 @@ a,
 
 // Blockquote
 .blockquote {
-  font-size: em(24px);
+  font-size: em(26px);
   font-style: italic;
   border-left: 9px solid $color-primary;
   border-radius: $br--default;
