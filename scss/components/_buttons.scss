@@ -26,5 +26,10 @@
   @include mediaq(medium) {
     width: auto;
     display: inline-block;
+
+    &.theme__colors {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
