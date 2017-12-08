@@ -13,8 +13,8 @@
   color: $white;
   border-radius: $br--default;
   text-transform: uppercase;
-  font-size: em(16px);
-  font-weight: $font-weight--regular;
+  font-size: em(15px);
+  font-weight: $font-weight--bold;
   display: block;
   transition: opacity $transition-duration;
   width: 100%;
@@ -23,6 +23,7 @@
   &:hover {
     opacity: .75;
   }
+
   @include mediaq(medium) {
     width: auto;
     display: inline-block;

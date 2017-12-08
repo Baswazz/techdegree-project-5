@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .container {
-  @extend .centered;
+  @extend %centered;
   width: 90%;
 
   // Set a max-width for grid container
@@ -16,6 +16,7 @@
   @include e(row) {
     margin-bottom: $gutter--default;
     @include flexbox(column);
+
     @include mediaq(medium) {
       @include flexbox(row, space-between);
     }
@@ -23,6 +24,7 @@
 
   @include e(col) {
     @include g-colors;
+    
     @include mediaq(medium) {
       @include g-columns;
     }
@@ -30,10 +32,22 @@
 }
 
 [class^="grid__col"] {
-  padding: em($gutter--default / 2);
+  padding: em(12px);
+  margin-bottom: em(6px);
+
+  @include mediaq(medium) {
+    &.centered {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
   &.theme__colors {
-    text-align: center;
     border-radius: $br--default;
-    font-weight: $font-weight--regular;
+    font-weight: $font-weight--bold;
+    font-size: em(16px);
+    @include mediaq(medium) {
+      text-align: center;
+    }
   }
 }

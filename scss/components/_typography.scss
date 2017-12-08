@@ -5,14 +5,14 @@
 body {
   font-size: $base__font-size;
   font-family: $font-family--primary;
-  font-weight: $font-weight--light;
+  font-weight: $font-weight--regular;
   line-height: ($base__line-height/$base__font-size);
   color: palette(grey);
 }
 
 .link {
   color: $color-secondary;
-  font-weight: $font-weight--regular;
+  font-weight: $font-weight--bold;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -31,6 +31,7 @@ body {
 }
 
 // Blockquote
+
 .blockquote {
   font-size: em(26px);
   font-style: italic;

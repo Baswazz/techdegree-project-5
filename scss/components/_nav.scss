@@ -3,10 +3,7 @@
 // ==========================================================================
 
 .nav {
-  margin: 0;
-  padding: 0;
   padding-top: em(54px);
-
   @include e(item) {
     a {
       display: block;
@@ -15,7 +12,7 @@
       border-radius: $br--default;
       color: palette(grey, dark);
       transition: background-color $transition-duration;
-      font-weight: $font-weight--light;
+      font-weight: $font-weight--regular;
       text-decoration: none;
       &:hover {
         background-color: $color-primary;
@@ -26,6 +23,7 @@
         padding: em(9px);
       }
     }
+    
     @include mediaq(medium) {
       margin-right: em(12px);
       margin-left: em(12px);

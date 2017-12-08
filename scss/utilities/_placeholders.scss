@@ -2,8 +2,6 @@
 // Placeholders
 // ==========================================================================
 
-// links
-// images
 // Headlines
 
 %headline-primary {
@@ -12,16 +10,15 @@
   font-weight: $font-weight--bold;
   line-height: (18px / $base__font-size);
   margin-left: em(8px);
+  margin-bottom: em(18px);
 }
 
 %headline-secondary {
   font-size: em(18px);
-  font-weight: $font-weight--thin;
+  font-weight: $font-weight--light;
   color: palette(grey, light);
   margin: em(27px) 0 em(27px);
 }
-
-// Nav items
 
 // buttons
 

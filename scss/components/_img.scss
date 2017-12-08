@@ -13,12 +13,12 @@ img {
 .img {
 	@include m(logo) {
 		width: 162px;
-		@extend .centered;
+		@extend %centered;
 		margin-top: em($gutter--default * 2);
 	}
 
 	@include m(avatar) {
-		@extend .centered;
+		@extend %centered;
 	}
 
   @include m(frame) {

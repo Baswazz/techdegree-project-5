@@ -9,6 +9,7 @@
     @content;
   }
 }
+
 @mixin m($modifier) {
   &--#{$modifier} {
     @content;
@@ -29,6 +30,7 @@
 }
 
 // Adjacent sibling margins
+
 @mixin doubly($margin: 1em) {
   & + & {
    margin-left: $margin;
@@ -62,10 +64,12 @@
     $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
     
     // Generate column modifier classes
+
     &--#{$i} {
       width: percentage($target / $context);
 
       // Theme colors
+
       &.theme__colors {
         background-color: palette(grid-colors, $i);
       }
@@ -79,8 +83,10 @@
   @for $i from 1 through $g-col-count {
     
     // Generate column modifier classes
+
     &--#{$i} {
       // Theme colors
+      
       &.theme__colors {
         background-color: palette(grid-colors, $i);
       }
